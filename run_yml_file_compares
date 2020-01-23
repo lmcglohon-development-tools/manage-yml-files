@@ -1,0 +1,61 @@
+start irb
+
+load './manage_yml_files.rb'
+
+first_file_info = {}
+second_file_info = {}
+first_file_info[:root] = 'en'
+first_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/common/locales/en.yml"
+second_file_info[:root] = 'es'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/common/locales/es.yml"
+compare_keys first_file_info, second_file_info
+
+second_file_info[:root] = 'fr'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/common/locales/fr.yml"
+compare_keys first_file_info, second_file_info
+
+second_file_info[:root] = 'ja'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/common/locales/ja.yml"
+compare_keys first_file_info, second_file_info
+
+first_file_info[:root] = 'en'
+first_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/common/locales/enums/en.yml"
+second_file_info[:root] = 'es'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/common/locales/enums/es.yml"
+compare_keys first_file_info, second_file_info
+
+second_file_info[:root] = 'fr'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/common/locales/enums/fr.yml"
+compare_keys first_file_info, second_file_info
+
+second_file_info[:root] = 'ja'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/common/locales/enums/ja.yml"
+compare_keys first_file_info, second_file_info
+
+first_file_info[:root] = 'en'
+first_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/frontend/config/locales/en.yml"
+second_file_info[:root] = 'es'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/frontend/config/locales/es.yml"
+compare_keys first_file_info, second_file_info
+
+second_file_info[:root] = 'fr'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/frontend/config/locales/fr.yml"
+compare_keys first_file_info, second_file_info
+
+second_file_info[:root] = 'ja'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/frontend/config/locales/ja.yml"
+compare_keys first_file_info, second_file_info
+
+first_file_info[:root] = 'en'
+first_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/public/config/locales/en.yml"
+second_file_info[:root] = 'es'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/public/config/locales/es.yml"
+compare_keys first_file_info, second_file_info
+
+second_file_info[:root] = 'fr'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/public/config/locales/fr.yml"
+compare_keys first_file_info, second_file_info
+
+second_file_info[:root] = 'ja'
+second_file_info[:file_location] = "/Users/lyrasis/Desktop/ASpaceVersions/check-new-master/archivesspace/public/config/locales/ja.yml"
+compare_keys first_file_info, second_file_info
